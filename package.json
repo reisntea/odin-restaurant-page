@@ -1,0 +1,29 @@
+{
+  "name": "odin-restaurant-page",
+  "version": "1.0.0",
+  "description": "Project: Restaurant Page from TOP.  Using only JavaScript to generate the content of a website with Webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reisntea/odin-restaurant-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/reisntea/odin-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/reisntea/odin-restaurant-page#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.4",
+    "html-webpack-plugin": "^5.6.7",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.108.4",
+    "webpack-cli": "^7.2.1",
+    "webpack-dev-server": "^6.0.0"
+  }
+}
