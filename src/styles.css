@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'MyFont';
+  src: 
+    url('./fonts/ostrichsans-medium-webfont.woff2') format('woff2'),
+    url('./fonts/ostrichsans-medium-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+    background-color: rgb(241, 234, 225);
+    box-sizing: border-box;
+    margin: 10px 0 0 0;
+    font-family: 'myFont', 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav {
+    font-size: 900;
+    padding: 10px;
+    border: 2px solid rgb(214, 140, 55);
+    border-radius: 5px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 30vw;
+    margin: 10px;
+}
+
+#heading {
+    font-size: 900;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bread-heading {
+    height: 300px;
+    border: 2px solid rgb(214, 140, 55);
+}
+
+#sources {
+    background-color: rgb(214, 140, 55);
+    font-size: 10px;
+    display: flex;
+    width: 100%;
+}
