@@ -25,6 +25,11 @@ nav {
     padding: 10px;
     border: 2px solid rgb(214, 140, 55);
     border-radius: 5px;
+    cursor: pointer;
+}
+
+nav:hover {
+    background-color: rgb(214, 140, 55);
 }
 
 #content {
