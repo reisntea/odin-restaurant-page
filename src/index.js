@@ -1,4 +1,4 @@
-import { createHomeContent as createHomeContentImport, createMenuContent as createMenuContentImport } from "./content.js";
+import { createHomeContent as createHomeContentImport, createMenuContent as createMenuContentImport, createAboutContent as createAboutContentImport } from "./content.js";
 import "./styles.css";
 
 // Controls what the page displays
@@ -26,7 +26,9 @@ function pageController () {
                 currentId = target.id;
                 break;
             case "about":
-                console.log('About nav was clicked');
+                content.replaceChildren();
+                createAboutContentImport();
+                currentId = target.id;
                 break;
             }
         }

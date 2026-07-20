@@ -2,6 +2,7 @@ import banhMi from "./images/banhmi.jpg";
 import banhMi2 from "./images/banhmi2.jpg";
 import frenchFries from "./images/frenchfries.jpg";
 import coffee from "./images/coffee.jpg";
+import truck from "./images/foodtruck.jpg";
 
 
 function createHomeContent() {
@@ -282,4 +283,46 @@ function createMenuContent() {
     content.appendChild(sourcesDiv);
 }
 
-export { createHomeContent, createMenuContent };
+function createAboutContent() {
+    const content = document.getElementById("content");
+
+    const headingDiv = document.createElement("div");
+    headingDiv.id = "heading";
+
+    const headingTitle = document.createElement("h1");
+    headingTitle.textContent = "Banh Mi Truck";
+
+    const headingImg = document.createElement("img");
+    headingImg.src = truck;
+    headingImg.classList.add("food-photo");
+    headingImg.alt = "Louie's Lunch, parked on Thurston Avenue in front of Risley in 2020";
+
+    headingDiv.appendChild(headingTitle);
+    headingDiv.appendChild(headingImg);
+    content.appendChild(headingDiv);
+
+    const aboutText = document.createElement("p");
+    aboutText.textContent = "Started in the early 2000s, our main goal has been to deliver tasty, inexpensive banh mi's to students on campus. Banh mi's are also known as Vietnamese hoagies, a type of hoagie that typically has pork spread, cold cuts of meat, pickled carrots and daikon, cucumber, cilantro, sliced peppers, soy sauce, mayo, and black pepper, all inside a Vietnamese baguette.";
+    
+    const aboutTextContinued = document.createElement("p");
+    aboutTextContinued.textContent = "We use fresh ingredients bought everyday and bake all our bread ourself. We promise to deliver high-quality food that won't hurt your budget.";
+
+    const endText = document.createElement("p");
+    endText.textContent = "We hope you stop by to try our banh mi!";
+
+    content.appendChild(aboutText);
+    content.appendChild(aboutTextContinued);
+    content.appendChild(endText);
+
+    const sourcesDiv = document.createElement("div");
+    sourcesDiv.id = "sources";
+
+    const source1 = document.createElement("p");
+    source1.textContent = "Food Truck Photo By Kenneth C. Zirkel - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=86838349";
+
+    sourcesDiv.appendChild(source1);
+    content.appendChild(sourcesDiv);
+
+}
+
+export { createHomeContent, createMenuContent, createAboutContent };
